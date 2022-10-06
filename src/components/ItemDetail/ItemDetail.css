@@ -1,0 +1,36 @@
+
+.prod__card {
+    margin: 5rem auto;
+    padding: 0.5rem;
+    background-color: #B4ff9f; }
+
+.prod__card:hover {
+    transform: scale(1.1);
+    transition: 0.8s; }
+
+.prod__foto {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%); }
+
+.prod__foto:hover {
+    filter: grayscale(0%); }
+
+.prod__descripcion {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem #005555;
+    background-color: #B4ff9f; }
+
+.prod__precio, .boton__carrito {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem; }
+

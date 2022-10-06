@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+/* *******aqui defino el color del body****** */
+
+body {
+  background-color: #9fd962; }

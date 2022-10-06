@@ -1,0 +1,50 @@
+/* *******aqui defino mis fuentes utilizadas en el proyecto****** */
+@font-face {
+    font-family: "Kaushan";
+    src: url("../../utils/fonts/KaushanScript-Regular.ttf"); }
+  
+  @font-face {
+    font-family: "GrapeNuts";
+    src: url("../../utils/fonts/GrapeNuts-Regular.ttf"); }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url("../../utils/fonts/RobotoFlex-Regular.ttf"); }
+  
+  /* ****************************HEADER/NAV***************************** */
+.encabezado {
+    background: linear-gradient(to bottom, #51a64b, #9fd962);
+    height: 15rem;
+    box-shadow: 0rem 0.1rem 0.5rem #687c69; }
+  
+.encabezado__logo {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 4rem;
+    border-style: groove;
+    border-color: magenta;}
+  
+.encabezado__menu {
+    margin: 2rem 0;
+    padding: 2rem;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2rem; }
+
+.nav-item a {
+    margin: 0 1.5rem;
+    color: #005555; }
+      
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+    transition: 0.5s; }
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ 
+        display: none; }
+    .navbar .nav-item:hover .dropdown-menu{ 
+        display: block; }
+    .navbar .nav-item .dropdown-menu{ 
+        margin-top:0; }
+}
