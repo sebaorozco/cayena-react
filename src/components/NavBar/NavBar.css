@@ -14,12 +14,12 @@
   /* ****************************HEADER/NAV***************************** */
 .encabezado {
     background: linear-gradient(to bottom, #51a64b, #9fd962);
-    height: 15rem;
+    height: 12rem;
     box-shadow: 0rem 0.1rem 0.5rem #687c69; }
   
 .encabezado__logo {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     margin: 2rem 4rem;
     border-style: groove;
     border-color: magenta;}

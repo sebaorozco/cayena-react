@@ -1,36 +1,33 @@
+.img-fluid {
+	max-width: 100%;
+	height: auto; }
 
-.prod__card {
-    margin: 5rem auto;
-    padding: 0.5rem;
-    background-color: #B4ff9f; }
+.item__pic {
+	margin-top: 2rem;}
 
-.prod__card:hover {
-    transform: scale(1.1);
-    transition: 0.8s; }
+.product__details__text h3 {
+	color: #252525;
+	font-weight: 700;
+	font-family: "Kaushan", sans-serif;
+	margin-bottom: 1.6rem;
+	margin-top: 2rem;
+	font-size: 3rem;
+}
 
-.prod__foto {
-    width: 20rem;
-    height: 20rem;
-    margin: 1rem auto;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(100%); }
+.product__details__price {
+	font-size: 3rem;
+	font-family: "Kaushan", sans-serif;
+	color: #dd2222;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+}
 
-.prod__foto:hover {
-    filter: grayscale(0%); }
-
-.prod__descripcion {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    text-shadow: 0.2rem 0.2rem 0.5rem #005555;
-    background-color: #B4ff9f; }
-
-.prod__precio, .boton__carrito {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 1rem; }
+.product__details__text p {
+	font-size: 1.6rem;
+	font-family: "Roboto", sans-serif;
+	color: #6f6f6f;
+	font-weight: 400;
+	line-height: 2.6rem;
+	margin: 0 0 1.5rem 0;
+}
 

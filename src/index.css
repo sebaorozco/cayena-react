@@ -9,3 +9,15 @@
 html {
   font-size: 62.5%; }
 
+/* *******aqui defino mis fuentes utilizadas en el proyecto****** */
+@font-face {
+  font-family: "Kaushan";
+  src: url("../src/utils/fonts/KaushanScript-Regular.ttf"); }
+
+@font-face {
+  font-family: "GrapeNuts";
+  src: url("../src/utils/fonts/GrapeNuts-Regular.ttf"); }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/utils/fonts/RobotoFlex-Regular.ttf"); }

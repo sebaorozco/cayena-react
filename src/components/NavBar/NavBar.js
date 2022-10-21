@@ -12,8 +12,6 @@ const NavBar = () => {
                     <img
                         alt=""
                         src={logo}
-                        width="30"
-                        height="30"
                         className="d-inline-block align-top rounded-circle img-thumbnail encabezado__logo"
                     />{' '}
                 </Navbar.Brand>

@@ -11,7 +11,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     }
     
     const plusClick = () => {
-        setCount(count + 1);
+        setCount(count + 1); 
     }   
 
     useEffect(() => {
@@ -20,10 +20,10 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
     return (
         <>
-            <ButtonGroup className="button__group" size="sm">
-                <Button variant="danger" disabled={count <= 1} onClick={minusClick}>-</Button>
-                <Button className="input__contador" variant="light">{count}</Button>
-                <Button variant="success" disabled={count >= stock} onClick={plusClick}>+</Button>
+            <ButtonGroup className="button__group" size="lg">
+                <Button variant="outline-dark" size="lg" disabled={count <= 1} onClick={minusClick} className="quantity__left">-</Button>
+                <Button className="input__contador" variant="light" size="lg">{count}</Button>
+                <Button variant="outline-dark" size="lg" disabled={count >= stock} onClick={plusClick} className="quantity__right">+</Button>
             </ButtonGroup>
             <Button variant="outline-dark" className="boton__carrito" disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</Button>
         </>

@@ -1,6 +1,12 @@
 .button__group {
-    margin-left: 5rem;
+    margin-left: 1rem;
+    font-weight: bolder;
+    font-size: 1rem;
 }
+
+.quantity__left .quantity__right{
+    background: transparent;
+    padding: 0 15px; }
 
 .input__contador {
     width: 4rem;

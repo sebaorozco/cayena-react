@@ -2,7 +2,6 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../utils/productos";
-//import ItemCount from '../ItemCount/ItemCount';
 
 
 const ItemDetailContainer = () => {
@@ -17,13 +16,8 @@ const ItemDetailContainer = () => {
             .catch((error) => console.log("Hay un error en la carga del Producto"));
     },[itemId])
 
-    // const onAdd = (quantity) => {
-    //     alert(`Usted ha seleccionado ${quantity} unidades de este producto`)
-    // }
-
     return (
         <ItemDetail product={product} />
-       // {{<ItemCount initial={1} stock={5} onAdd={onAdd} /> }}
     );
 }
 
