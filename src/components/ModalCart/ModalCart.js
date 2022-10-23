@@ -3,8 +3,6 @@ import { Button, Modal, Table } from 'react-bootstrap';
 
 const ModalCart = ({show, handleClose}) => {
     
-    
-    
     return (
             <Modal show={show} onHide={handleClose} scrollable={true} size={'lg'}>
                 <Modal.Header closeButton>

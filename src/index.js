@@ -10,7 +10,7 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Cayena's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC9soMumtLis5CERyYHBiaa7LO2czj_0KE",
   authDomain: "cayena-dietetica.firebaseapp.com",
@@ -21,7 +21,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 //Hasta Aqui***************************************************************
 

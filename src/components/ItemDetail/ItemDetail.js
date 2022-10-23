@@ -1,23 +1,22 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './ItemDetail.css'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
-import ModalCart from '../Cart/ModalCart';
+import { CartContext } from '../../contexts/CartContext';
 
 const ItemDetail = ({product}) => {
 
-    const [gotoCart, setgotoCart] = useState(false);
+    const [showItemCount, setShowItemCount] = useState(true);
     
+    const {addItem} = useContext(CartContext);
+
     const onAdd = (quantity) => {
-        setgotoCart(true)
+        setShowItemCount(false)
+        addItem(product, quantity)
     }
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     return (
-        <>
             <Container>
                 <Row>
                     <Col lg={6} md={6} sm={12}>
@@ -29,25 +28,21 @@ const ItemDetail = ({product}) => {
                         <div className="product__details__text">
                             <h3>{product.name}</h3>
                             <div className="product__details__price">${product.price}</div>
-                            <p> Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
-                                vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
-                                quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
-                            <div className="product__details__quantity">
+                            <p> {product.description}</p>
+                            <div>
                                 {
-                                    gotoCart ? (
+                                    showItemCount ? <ItemCount initial={1} stock={10} onAdd={onAdd} /> : (
                                         <>
-                                            <Button className='boton__carrito' as={Link} to={'/'} variant="outline-dark">Seguir Comprando</Button>
-                                            <Button className='boton__carrito' variant="outline-dark" onClick={handleShow}>Ir a Carrito de Compras</Button>
+                                            <Button className='boton__carrito' as={Link} to={'/'} variant="outline-dark" size="lg">Seguir Comprando</Button>
+                                            <Button className='boton__carrito' as={Link} to={'/cart'} variant="outline-dark" >Ver Carrito</Button>
                                         </>
-                                    ) : <ItemCount initial={1} stock={5} onAdd={onAdd} />                                   
+                                    )                                  
                                 } 
                             </div>
                     </div>
                         </Col>
                 </Row>
             </Container>
-            <ModalCart show={show} handleClose={handleClose} />
-        </>
     );
 }
 

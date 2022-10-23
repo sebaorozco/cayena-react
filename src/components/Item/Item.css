@@ -1,4 +1,3 @@
-
 .prod__card {
     margin: 5rem auto;
     padding: 0.5rem;
@@ -6,7 +5,10 @@
 
 .prod__card:hover {
     transform: scale(1.1);
-    transition: 0.8s; }
+    transition: 0.8s;}
+
+.prod__card:hover .prod__foto{
+    filter: grayscale(0%); }
 
 .prod__foto {
     width: 20rem;
@@ -17,20 +19,24 @@
     background-repeat: no-repeat;
     filter: grayscale(100%); }
 
-.prod__foto:hover {
-    filter: grayscale(0%); }
-
 .prod__descripcion {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow: 0.2rem 0.2rem 0.5rem #005555;
     background-color: #B4ff9f; }
 
-.prod__precio, .boton__carrito {
+.prod__precio {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
     font-weight: bold;
     margin: 1rem; }
 
+.boton__carrito__card {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem;
+     }

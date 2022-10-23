@@ -3,7 +3,9 @@
 	height: auto; }
 
 .item__pic {
-	margin-top: 2rem;}
+	margin-top: 2rem;
+	text-align: center;	
+}
 
 .product__details__text h3 {
 	color: #252525;
@@ -31,3 +33,9 @@
 	margin: 0 0 1.5rem 0;
 }
 
+.boton__carrito {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem; }

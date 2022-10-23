@@ -2,3 +2,10 @@
     width: 3.5rem;
     height: 3.5rem;
     margin-right: 1rem; }
+
+.pill__format {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-weight: bolder;
+    font-size: small;
+}

@@ -1,0 +1,24 @@
+.cart__title h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 1.5rem;
+    font-family: "Kaushan";
+    color: #005555;
+}
+
+.cart__image {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+.table__leyendaVacio {
+    font-size: 2rem;
+    font-weight: bolder; 
+}
+
+.boton__carrito {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem; }

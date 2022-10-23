@@ -1,34 +1,25 @@
 import cart from "../../images/Icon/shopping-cart1.png";
 import { Link } from 'react-router-dom';
 import "./CartWidget.css"
-import ModalCart from "../Cart/ModalCart";
-import { useState } from 'react';
-
-
+import { Badge } from "react-bootstrap";
+import { CartContext } from "../../contexts/CartContext";
+import { useContext } from "react";
 
 const CartWidget = () => {
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+    const { totalProducts } = useContext(CartContext); 
 
     return (
-        <>
-            <Link onClick={handleShow}>
+            <Link to='/cart'>
                 <img 
                     src={cart} 
                     alt="Icono carrito" 
                     className="cart"
                 />
-                <span 
-                    id="total-carrito" 
-                    className="position-absolute top-09 start-90 translate-middle badge bg-dark text-white ms-1 rounded-pill">0
-                </span>
-            </Link>
-            <ModalCart show={show} handleClose={handleClose} />
-        </>
-        
+                <Badge className="position-absolute top-09 start-90 translate-middle pill__format" pill bg="dark">
+                    {totalProducts || ""}
+                </Badge> 
+            </Link>  
     )
 }
 

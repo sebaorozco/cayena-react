@@ -1,0 +1,38 @@
+.table__header {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto";
+}
+
+.table__precioTotal {
+    font-size: 2rem;
+    font-weight: bolder; 
+}
+
+.boton__carrito {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 2rem; }
+
+.trash {
+    width: 3rem;
+    height: 3rem; 
+    cursor: pointer;
+}
+
+.product__image {
+    width: 10rem;
+    height: 10rem;
+}
+
+.body__styles {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.two__buttons {
+    text-align: end;
+}
