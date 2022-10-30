@@ -1,4 +1,4 @@
-![Cayena]()
+![Cayena](https://github.com/sebaorozco/cayena-react/blob/master/src/images/Logo/logoCayena.jpg)
 
 # Proyecto E-commerce Dietética Cayena - 
 
