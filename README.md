@@ -1,6 +1,6 @@
-<img src="images/Logo/logoCayena.jpg" width= "100px">
+![Cayena](https://github.com/sebaorozco/cayena-react/blob/master/src/images/Logo/logoCayena.jpg)
 
-# Proyecto E-commerce Dietética Cayena - 
+# - Proyecto E-commerce Dietética Cayena - 
 
 Este proyecto tiene como objetivo desarrollar un e-commerce para la empresa **"Cayena - Almacén Orgánico & Natural"**.
 
