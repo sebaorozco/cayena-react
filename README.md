@@ -1,4 +1,4 @@
-<img src="images/Logo/logoCayena.jpg" width= "100px">
+![Cayena]()
 
 # Proyecto E-commerce Dietética Cayena - 
 
