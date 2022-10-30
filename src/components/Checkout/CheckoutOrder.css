@@ -1,0 +1,49 @@
+.orden__compra{
+    background-color: #f1f1f1;
+    border-style: outset;
+    border-color:#000;
+}
+
+.form__header3 {
+    text-align: end;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.datos__cliente{
+	border-top-style: none;
+	
+}
+.datos__cliente p{
+    border-bottom-style: groove;
+    border-color: rgb(0, 51, 102);
+    border-width: 0.5px;
+    font-size: 1.5rem;
+}
+
+.table__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table__container {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.total__pagar {
+    text-align: end;
+    font-size: 2rem;
+}
+
+
+.observaciones{
+	height: 120px;
+	width: 80%;
+	border: 3px groove rgb(0, 51, 102);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+}

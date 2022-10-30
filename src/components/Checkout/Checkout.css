@@ -1,0 +1,34 @@
+.checkout__title h1{
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 1.5rem;
+    font-family: "Kaushan";
+    color: #005555;
+}
+
+.form__text {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #005555;
+}
+
+.boton__form1, .boton__form2, .boton__form3, .boton__form4 {
+    margin-top: 1rem;
+    font-weight: bold; 
+    font-size: 1.5rem;}
+  
+.boton__form2 {
+    margin-left: 2rem; }
+
+.boton__form3 {
+    margin-right: .5rem; }
+
+.compra__text {
+    text-align: center;
+    margin-top: 5rem;
+}
+.compra__text h3{
+    margin: 4rem;
+    display: inline-block;
+    background-color: aqua;
+}

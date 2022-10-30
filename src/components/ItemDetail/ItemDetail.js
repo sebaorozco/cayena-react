@@ -31,7 +31,7 @@ const ItemDetail = ({product}) => {
                             <p> {product.description}</p>
                             <div>
                                 {
-                                    showItemCount ? <ItemCount initial={1} stock={10} onAdd={onAdd} /> : (
+                                    showItemCount ? <ItemCount initial={1} stock={product.stock} onAdd={onAdd} /> : (
                                         <>
                                             <Button className='boton__carrito' as={Link} to={'/'} variant="outline-dark" size="lg">Seguir Comprando</Button>
                                             <Button className='boton__carrito' as={Link} to={'/cart'} variant="outline-dark" >Ver Carrito</Button>

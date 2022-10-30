@@ -1,6 +1,7 @@
 import { Button, Container, Spinner } from "react-bootstrap";
 
 const Loader = () => {
+    
     return (
         <Container className="text-center">
             <Button variant="light" disabled>

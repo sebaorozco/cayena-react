@@ -36,7 +36,7 @@ const CartProvider = ({children}) => {
             setCarrito([...carrito, newItem]);
         }
     }
-    console.log(carrito);
+    
     //****************/ Elimina un item del carrito /****************//
     const removeItem = (id) => setCarrito(carrito.filter(product => product.id !== id));
 

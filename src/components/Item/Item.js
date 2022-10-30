@@ -8,7 +8,7 @@ const Item = ({prod}) => {
   const { addItem } = useContext(CartContext);
 
   return (  
-    <Card className='prod__card' border='success' style={{ width: '28rem' }}>
+    <Card className='prod__card' border='success'>
       <Card.Img className='prod__foto' variant="top" src={prod.img} />
       <Card.Body>
         <Card.Title className='prod__descripcion'>{prod.name}</Card.Title>

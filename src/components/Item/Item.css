@@ -1,4 +1,5 @@
 .prod__card {
+    width: 30rem;
     margin: 5rem auto;
     padding: 0.5rem;
     background-color: #B4ff9f; }
@@ -29,14 +30,14 @@
 .prod__precio {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 1rem; }
 
 .boton__carrito__card {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 1rem;
      }
