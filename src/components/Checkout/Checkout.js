@@ -18,7 +18,6 @@ const Checkout = () => {
   const [id, setId] = useState();
   const [semaforo, setSemaforo] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [itemsToUpdate, setItemsToUpdate] = useState([])
 
   const changeHandler = (ev) => {
     setbuyer({...buyer, [ev.target.name]: ev.target.value})
@@ -55,21 +54,16 @@ const Checkout = () => {
     console.log(itemsID)
     const db = getFirestore();
     const itemCollectionRef = collection(db, "products"); // Hago referencia a mi colección de productos
-    const q = query(itemCollectionRef, where(documentId(), "in", itemsID))
-    getDocs(q)
-      .then((snapshot) => {
-        const getItems = snapshot.docs.map(el => {
-          return {id: el.id, ...el.data()}
-        });
-        setItemsToUpdate(getItems);
-      })
+    const itemsToUpdate = query(itemCollectionRef, where(documentId(), "in", itemsID))
     const batch = writeBatch(db); 
-    itemsToUpdate.forEach((result) => {
-      batch.update(result, {
-        stock: result.data().stock - carrito.find((item) => item.id === result.id).quantity,
+    getDocs(itemsToUpdate)
+      .then((collection) => {
+        collection.docs.forEach(result => {
+          batch.update(result.ref, {stock: result.data().stock - carrito.find((item) => item.id === result.id).quantity,
+          })
+        });
+        batch.commit();
       })
-    })
-    batch.commit();
   }  
 
 

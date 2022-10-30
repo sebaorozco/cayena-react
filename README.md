@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+<img src="images/Logo/logoCayena.jpg" width= "100px">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Proyecto E-commerce Dietética Cayena - 
 
-## Available Scripts
+Este proyecto tiene como objetivo desarrollar un e-commerce para la empresa **"Cayena - Almacén Orgánico & Natural"**.
 
-In the project directory, you can run:
+Todo el proyecto fue desarrollado para el cursado de la carrera de React JS de plataforma [Coderhouse](https://plataforma.coderhouse.com/cursos)
 
-### `npm start`
+## Herramientas y librerías
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- El proyecto fue desarrollado utilizando la herramienta create-react-app.
+- Bootstrap y React bootstrap.
+- React router dom.
+- Hace uso de la BDD Firestore para almacenar los productos y crear las órdenes de compra diarias, almacenandolas en una colección "orders" con su id automático. Los productos corresponden a una colección de nombre "products".
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estado del Proyecto
 
-### `npm test`
+Actualmente el proyecto se encuentra en estado de avance, ya que aún restan elaborar otros componentes como el footer, contacto y consultorio (ya que no sólo sera una tienda donde se vendan los productos del almacén sino que también se darán turnos para el consultorio nutricional).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para aprobar el proyecto se realizó lo siguiente:
 
-### `npm run build`
+- La tienda lista los productos almacenados en Firestore. Estos items pueden ser agregados al carrito de a uno o bien ingresando al botón de "detalle", se puede incrementar la cantidad requerida de ese producto, siempre que no supere el stock del mismo ya que el botón se deshabilita.
+- Una vez que se agregó el primer producto al carrito, se muestra junto al **Cartwidget**, la cantidad agregada de items que tiene el carrito. Se creó un contexto para el carrito, de manera de tener las funcionalidades a mano para los demás componentes.
+- El cliente desde la vista del carrito, si el mismo se encuentra sin productos se observa un mensaje de *"carrito vacío"* junto a un botón para volver al sector de Compras. En caso contrario de que el carrito posea items, se podrá visualizar un listado de la compra detallada, con la cantidad de cada producto agregado al carrito como así también de su Monto Total a pagar. Desde esta tabla el cliente podrá eliminar un producto si así lo desea o bien "vaciar" la totalidad del carrito.
+- Además cuenta con un botón para *"Volver a comprar"* si es que se olvidó de comprar algún producto o bien de *"Finalizar la Compra"*.
+- Al finalizar la compra, la siguiente ventana muestra un formulario de compra donde el cliente deberá ingresar datos mínimos, para poder habilitar un botón de **"Generar orden de compra"**. Al hacer clic en el mismo, se genera una orden de compra, guardando los datos del cliente, la fecha de compra y los productos del carrito en una colección "orders" en Firestore. La siguiente ventana mostrará al cliente el ID de la compra mas un botón para volver al Home o bien si lo desea podrá imprimir un Comprobante de la compra realizada. 
+- El comprobante muestra los datos de la orden y el total a pagar por el cliente. Aqui se adecuará el proyecto para permitir al cliente imprimir o descargar el comprobante.
+- El stock es actualizado una vez realizada la compra por el cliente.-
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -18,7 +18,7 @@ const Item = ({prod}) => {
         <ListGroupItem className='prod__precio'>${prod.price}</ListGroupItem>
       </ListGroup>
       <Card.Body>
-        <Button className='boton__carrito__card' variant="outline-dark" onClick={()=>addItem(prod,1)}>Agregar al Carrito</Button>
+        <Button className='boton__carrito__card' variant="outline-dark" disabled={prod.stock <= 0} onClick={()=>addItem(prod,1)}>Agregar al Carrito</Button>
         <Button className='boton__carrito__card' as={Link} to={`/item/${prod.id}`} variant="outline-dark">Ver detalle</Button>
       </Card.Body>
     </Card>
