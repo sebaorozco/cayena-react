@@ -1,0 +1,18 @@
+.footer__about {
+	margin-bottom: 3rem;
+}
+
+.footer__about ul li {
+	font-size: 1.6rem;
+	color: #1c1c1c;
+	line-height: 3.6rem;
+	list-style: none;
+}
+
+.footer__about__logo {
+	margin-bottom: 1.5rem;
+}
+
+.footer__about__logo a {
+	display: inline-block;
+}

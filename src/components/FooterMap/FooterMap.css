@@ -1,0 +1,17 @@
+.footer__widget ul {
+	width: 50%;
+	text-align: left;
+    padding: 0;
+	float: left;
+}
+
+.footer__widget ul li {
+	list-style: none;
+}
+
+.footer__widget ul li span {
+	color: #1c1c1c;
+	font-size: 1.4rem;
+	line-height: 3.2rem;	
+}
+

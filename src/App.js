@@ -24,7 +24,7 @@ function App() {
             <Route exact path='/cart' element={<Cart />} />
             <Route exact path='/checkout' element={<Checkout />} />
             <Route exact path='/checkoutorder/:orderId' element={<CheckoutOrder />} />
-        </Routes>
+        </Routes>   
       </CartProvider>
     </BrowserRouter>
   );

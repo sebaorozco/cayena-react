@@ -1,0 +1,37 @@
+.footer {
+	background:  linear-gradient(to top, #51a64b, #9fd962);
+	padding-top: 5rem;
+	padding-bottom: 0;
+}
+
+.footer__line {
+	border-top: 0.1rem solid #ebebeb;
+	padding: 3rem 0;
+}
+
+.footer__widget {
+	margin-bottom: 3rem;
+	overflow: hidden;
+}
+
+.footer__widget h6 {
+	color: #1c1c1c;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.footer__widget p {
+	font-size: 1.4rem;
+	color: #1c1c1c;
+	margin-bottom: 3rem;
+}
+
+.img__cayena {
+	height: 7rem;
+	margin-left: 2rem;
+}
+
+h6 {
+	font-size: 1.6rem;
+}
+

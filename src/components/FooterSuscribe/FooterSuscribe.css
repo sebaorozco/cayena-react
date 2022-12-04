@@ -1,0 +1,71 @@
+.footer__widget form {
+	position: relative;
+	margin-bottom: 3rem;
+}
+
+.footer__widget form input {
+	width: 100%;
+	font-size: 1.6rem;
+	padding-left: 2rem;
+	color: #1c1c1c;
+	height: 4.6rem;
+	border: 0.1rem solid #ededed;
+}
+
+.footer__widget form input::placeholder {
+	color: #1c1c1c;
+}
+
+.footer__widget form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 2.6rem;
+	height: 100%;
+    font-size: 1.5rem;
+}
+
+.suscribe__btn {
+	font-size: 1.4rem;
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 1.3rem 3rem 1.2rem;
+	background: #7fad39;
+	border: none;
+}
+
+.footer__widget .footer__widget__social a {
+	display: inline-block;
+	height: 4.1rem;
+	width: 4.1rem;
+    font-size: 1.7rem;
+	color: #404040;
+	border: 0.1rem solid #ededed;
+	border-radius: 50%;
+	line-height: 3.8rem;
+	text-align: center;
+	background: #ffffff;
+	-webkit-transition: all, 0.3s;
+	-moz-transition: all, 0.3s;
+	-ms-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	margin-right: 1rem;
+}
+
+.footer__widget__social a img{
+	height: 3rem;
+	width: 3rem;
+}
+
+.footer__widget .footer__widget__social a:last-child {
+	margin-right: 0;
+}
+
+.footer__widget .footer__widget__social a:hover {
+	background: #7fad39;
+	border-color: #ffffff;
+    color: #ffffff;
+}

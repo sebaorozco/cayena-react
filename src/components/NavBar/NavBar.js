@@ -10,7 +10,7 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand as={Link} to='/'>
                     <img
-                        alt=""
+                        alt="Logo Cayena Almacén Orgánico"
                         src={logo}
                         className="d-inline-block align-top rounded-circle img-thumbnail encabezado__logo"
                     />{' '}

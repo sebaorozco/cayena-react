@@ -52,7 +52,7 @@ const CheckoutOrder = () => {
                 <Row>
                     <Col>
                         <div>
-                            <img alt="logo" src={logoCayena} height="120px;" />
+                            <img alt="logo" src={logoCayena} height="12rem;" />
                         </div>
                     </Col>
                     <Col>
